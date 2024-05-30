@@ -31,6 +31,7 @@ class SolverSettings:
             "qpoases",
             "qpswift",
             "quadprog",
+            "reluqp",
             "scs",
         ]
     )
@@ -114,6 +115,7 @@ class SolverSettings:
         self.__settings["proxqp"]["eps_duality_gap_abs"] = eps_abs
         self.__settings["qpalm"]["eps_abs"] = eps_abs
         self.__settings["qpswift"]["RELTOL"] = eps_abs * np.sqrt(3.0)
+        self.__settings["reluqp"]["eps_abs"] = eps_abs
         self.__settings["scs"]["eps_abs"] = eps_abs
 
     def set_eps_rel(self, eps_rel: float) -> None:

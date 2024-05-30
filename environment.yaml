@@ -15,6 +15,8 @@ dependencies:
     - qpbenchmark >= 2.2.1
     - qpoases >= 3.2.0
     - quadprog >= 0.1.11
+    - reluqp
+    - torch
     - pip:
         - clarabel >= 0.4.1
         - highspy >= 1.5.2
